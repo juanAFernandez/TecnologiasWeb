@@ -12,4 +12,4 @@ Ejercicio de clase para comprender la estructura básica de un documento HTML.
 
 Alojado en github en:
 
-https://github.com/juanAFernandez/EjercicioHTML
+https://github.com/juanAFernandez/TecnologiasWeb/tree/master/EjercicioBasicoHTML
