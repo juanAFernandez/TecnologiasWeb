@@ -1,0 +1,91 @@
+/*Usamos las # para identificar las secciones de html de forma concreta 
+  y configurar sus características de forma específica.*/ 
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+#cuerpo{
+		background-color: #CCC;
+	
+}
+
+#cabecerayBarra {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	color:#CCC;
+	background:#333;
+	padding:8px;
+}
+/*Editando la configuración de la barra de navegación, como nos interesa vertical, lo dejamos con una
+ configuración muy sencilla y editamos la anchura de la barra de navegación a 155px para que quede bien.*/
+
+/*Las filas*/
+
+
+#cabecerayBarra, #pie{
+	font: bold 120% monospace;
+}
+
+
+#barraNavegacion a{
+	text-decoration:none; 
+}
+#barraNavegacion a:hover{
+	color: gray;
+}
+
+#cuerpoTexto{
+
+	margin: 100px 20px;
+	font-family: Arial, 'Lucida Sans Unicode', Helvetica, sans-serif;	
+
+}
+
+.lista{
+	margin-top:10px;
+	margin-left: 60px;
+	margin-bottom: 10px;
+
+}
+
+#cuarto h1{
+	font-size: 20px;
+}
+#cuarto h2{
+	font-size: 15px;
+}
+
+#cuarto li{
+	margin-left: 100px;
+}
+#cuarto ul{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#pie{
+	
+clear: both;
+text-align: center;
+padding: 2px;
+
+
+}
+
+/* Notas:
+ * 
+ * En páginas como https://kuler.adobe.com/explore/newest/ (hay muchas más) podemos encontrar
+ * papeletas diseñadas por gente para montajes de todo tipo de colores que segun sus creadores
+ * encajan muy bien, además podemos obtener los códigos para usarlos en nuestra web y es bastante
+ * útil cuando estamos faltos de inspiración.
+ * En este caso se ha utilizado el tema "Cherry tree gn color": https://kuler.adobe.com/Cherry-tree-gn-color-theme-3675571/
+ * 
+ * 
+ * 
+ * Este documento también puede encontrarse en github.com/juanAFernandez/EjercicioHTML*/	

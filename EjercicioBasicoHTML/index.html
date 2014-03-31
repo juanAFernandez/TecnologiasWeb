@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<!--Cabecera del documento. El nombre del documento además de un montón
+		de metadatos como la codificación de caracteres UTF-8 que hará que 
+		las tildes y la ñ se vean correctamente. Además se pueden incluir
+		otros datos como autor del documento, etc..  -->
+	<head>
+		<title>Grado en Ingeniería Informática</title>
+		<link rel="stylesheet" href="estilo.css">
+		<meta charset="UTF-8">
+		<meta name="autor" content="Juan Antonio Fernández Sánchez">
+		<meta name="descripción" content="Práctica sencilla.">  
+	</head>
+
+	<!-- Cuerpo de la página, donde estará incluido todo el contenido en si. -->
+	
+	<body id="cuerpo">
+	
+	<div id="cabecerayBarra">
+		<!-- header, el titulo principal de la página y un ide para configurar
+			su aspecto en la hora de estilos asociada a este documento html, en contreto estilo.css-->
+		<header id="cabecera" >
+			<h1>Grado en Ingniería Informática</h1>
+		</header>
+
+		<nav id="barraNavegacion">
+			<!--Con <ul></ul> hacemos una lista de elementos, y dentro de esta cada elemento viene 
+				encerrado entre <li></li> -->
+			<ul>
+				<!-- Como en este caso queremos enlaces, usamos a (anchor) y no li 
+				además, usamos los id de los artículos para acceder a ellos dentro de nuestra página. -->
+				<a href="#descripcion" title"Ir a descripcion">Descripción</a>
+				<a href="#organizacion" title"Ir a organizacion">Organización</a>
+				<a href="#primero" title"Ir al primer curso">Primero</a>
+				<a href="#segundo" title"Ir al segundo curso">Segundo</a>
+				<a href="#tercero" title"Ir al tercer curso">Tercero</a>
+				<a href="#cuarto" title"Ir al cuarto curso">Cuarto</a>
+				<a href="https://raw.githubusercontent.com/juanAFernandez/EjercicioHTML/master/README.md" title"Ir al cuarto curso">Readme.md</a>
+
+			</ul>
+		</nav>
+	</div>
+
+	
+		
+		<!--Con nav hacemos una barra de navegación, (nav), lo que no quiere decir que su orientación sea
+			horizontal, aunque por defecto es vertical. Esto lo configuraremos con css -->
+
+
+		
+		<aside id="cuerpoTexto">
+			
+			<article id="descripcion">
+				El Grado en Ingeniería Informática de la UGR prepara a sus estudiantes para poder trabajar en cualquier empresa
+				del sector de las TIC, donde algunos de los campos más interesantes son:
+				
+				<ul class="lista">
+					<li>Centros de Cálculo</li>
+					<li>Centros de Investigación</li>
+					<li>Entidades Financieras.</li>
+    				<li>Empresas de Hardware y Software.</li>
+    				<li>Empresas de Telecomunicaciones.</li>
+    				<li>Empresas Tecnológicas.</li>
+    				<li>Empresas de Seguridad.</li>
+    				<li>Consultoras Informáticas.</li>									
+				</ul>
+				En estos campos un Ingeniero Informático podrá desempeñar cargos de responsabilidad de Sistemas de Información, 
+				Desarrollo de Software o Producción y Explotación de Sistemas Informáticos entre otros. Analista, Arquitecto de 
+				Bases de Datos, Técnico de Sistemas o responsable de Sistemas de Seguridad.  								
+			</article>
+			
+						
+			<article id="organizacion">
+				<br><br>
+				El grado se compone de 240 créditos <a href="http://www.eees.es/es/ects">ECTS</a>, que se dividen en 
+				materias de formación básica, de formación obligatoria (incluyendo la mención) y optativas, como se ve 
+				en la siguiente figura.
+				<br> <br>
+				<img src="creditosSemestre.jpg" width="600px" height="300px" alt="Creditos Semestre">
+				<br><br>	
+				Por tanto, el estudiante cursará 60 ECTS de formación básica, seguida de 90 créditos obligatorios de Rama, para en el sexto semestre comenzar a cursar asignaturas propias de especialidad. El alumno deberá cursar 48 ECTS de asignaturas de cualquiera de las menciones, pero si desea obtener una mención específica, deberá cursar todas las asignaturas del módulo de especialidad asociado a dicha mención. Cada especialidad se ve reforzada posteriormente por unos complementos optativos (el estudiante elegirá hacerlos, o bien elegirá definir su optatividad como estime oportuno incluyendo la posible realización de Prácticas en Empresa o cursar Complementos Optativos Interdisciplinares) para terminar sus 240 ECTS realizando el Proyecto Fin de Grado			
+			</article>
+
+			<article id="primero">
+				<br><br>
+				El primer curso de la carrera lo componen 10 asignaturas de materias obligatorias como las que se muestran
+				en la siguiente tabla.
+				<br><br>
+
+				<table style="width: 50%px;" border="3" align="center">
+  					<tbody>
+  						<!--Primera fila-->
+						<tr>
+    						<td>Primer Cuatrimestre</td>
+    						<td>Segundo Cuatrimestre</td>
+  						</tr>
+  						<!--Segunda fila-->
+						<tr>
+                    		<td><a href="documentos/ALEM.pdf">ALEM</td>
+				    		<td><a href="documentos/ESTADISTICA.pdf">ESTADISTICA</td>
+				    	</tr>
+				    	<!--Tercera fila-->
+				    	<tr>
+                    		<td><a href="documentos/CALCULO.pdf">CALCULO</td>
+				    		<td><a href="documentos/IES.pdf">IES</td>
+				    	</tr>
+				    	<!--Cuarta fila-->
+				    	<tr>
+                    		<td><a href="documentos/FP.pdf">FP</td>
+				    		<td><a href="documentos/LMD.pdf">LMD</td>
+				    	</tr>
+				    	<!--Quinta fila-->
+				    	<tr>
+                    		<td><a href="documentos/FFT.pdf">FFT</td>
+				    		<td><a href="documentos/MP.pdf">MP</td>
+				    	</tr>
+				    	<!--Sexta fila-->
+				    	<tr>
+                    		<td><a href="documentos/FS.pdf">FS</td>
+				    		<td><a href="documentos/TOC.pdf">TOC</td>
+				    	</tr>
+
+					</tbody>
+				</table>
+
+				<p id="especial">
+					*Podemos descargar los pdfs de todas las asignaturas pinchando en su nombre*
+				</p>
+
+			</article>
+
+			<article id="segundo">
+				<br><br>
+				El segundo curso de la carrera lo componen otras 10 asignaturas de materias obligatorias que profundizan más
+				en la temática de la carrera, se muestran en la siguiente tabla.
+				<br><br>
+
+				<table style="width: 50%px;" border="3" align="center">
+  					<tbody>
+						<tr>
+    						<td>Primer Cuatrimestre</td>
+    						<td>Segundo Cuatrimestre</td>
+  						</tr>
+						<tr>
+						<tr>
+                    		<td>EC</td>
+				    		<td>ALG</td>
+				    	</tr>
+				    	<tr>
+                    		<td>ED</td>
+				    		<td>AC</td>
+				    	</tr>
+				    	<tr>
+                    		<td>PDOO</td>
+				    		<td>FBD</td>
+				    	</tr>
+				    	<tr>
+                    		<td>SCD</td>
+				    		<td>FIS</td>
+				    	</tr>
+				    	<tr>
+                    		<td>SO</td>
+				    		<td>IA</td>
+				    	</tr>
+
+					</tbody>
+				</table>
+			</article>
+
+			<article id="tercero">
+				<br><br>
+				El tercer curso de la carrera lo componen otras 5 asignaturas de materias obligatorias que profundizan más
+				en la temática de la carrera en el primer cuatrimestre mientras que en el segundo se comienza con la rama
+				específica.
+				<br><br>
+
+				<table style="width: 50%px;" border="3" align="center">
+  					<tbody>
+						<tr>
+    						<td>Primer Cuatrimestre</td>
+    						<td>CSI</td>
+    						<td>IS</td>
+    						<td>IC</td>
+    						<td>SI</td>
+    						<td>TI</td>
+  						</tr>
+						<tr>
+                    		<td>DDSI</td>
+				    		<td>AA</td>
+				    		<td>DSD</td>
+    						<td>AS</td>
+    						<td>ABD</td>
+    						<td>CUIA</td>
+				    	</tr>
+				    	<tr>
+                    		<td>FR</td>
+				    		<td>IC</td>
+				    		<td>DS</td>
+				    		<td>ACAP</td>
+				    		<td>TDRC</td>
+				    		<td>SWAP</td>
+				    	</tr>
+				    	<tr>
+                    		<td>IG</td>
+				    		<td>M</td>
+				    		<td>DGP</td>
+				    		<td>DHD</td>
+				    		<td>SGE</td>
+				    		<td>SM</td>
+				    	</tr>
+				    	<tr>
+                    		<td>IS</td>
+				    		<td>MAC</td>
+				    		<td>SIBW</td>
+				    		<td>DSE</td>
+				    		<td>SMI</td>
+				    		<td>TW</td>
+				    	</tr>
+				    	<tr>
+                    		<td>MC</td>
+				    		<td>TSI</td>
+				    		<td>SG</td>
+				    		<td>SMP</td>
+				    		<td>TW</td>
+				    		<td>TDRC</td>
+				    	</tr>
+
+					</tbody>
+				</table>
+			</article>	
+
+			<article id="cuarto">
+				<br><br>
+				En cuarto tenemos la misma distribución por ramas.
+
+				Primer Cuatrimestre
+
+				<br><br>
+
+				<h1>Computación y Sistemas Inteligentes</h1>
+				<ul>
+					<li>Nuevos paradigmas de Interacción</li>
+					<li>Procesadores de Lenguajes</li>
+					<li>Visión por Computador</li>
+				</ul>
+
+				<h2>Complementos</h2>
+				<ul>
+				 	<li>Programación Técnica y Científica</li>
+				 	<li>Simulación de Sistemas</li>
+				 	<li>Teoría de la Información y la Codificación</li>
+				</ul>
+				
+
+				<h1>Ingeniería de Software</h1>
+				<ul>
+					<li>Desarrollo basado en agentes</li>
+					<li>Diseño de Interfaces de Usuario</li>
+					<li>Metodologías de Desarrollo Agil</li>
+				</ul>
+
+				<h2>Complementos</h2>
+				<ul>
+				 	<li>Lógica y Programación</li>
+				 	<li>Programación Gráfica de Videojuegos</li>
+				 	<li>Seguridad en Sistemas Operativos</li>
+				</ul>
+
+				<h1>Ingeniería de Computadores</h1>
+				<ul>
+					<li>Centros de procesamiento de datos</li>
+					<li>Sistemas Empotrados</li>
+					<li>Tecnologías de Red</li>
+				</ul>
+
+				<h2>Complementos</h2>
+				<ul>
+				 	<li>Implementación de ALgoritmos en Hardware</li>
+				 	<li>Informática Industrial</li>
+				 	<li>Tecnologías Emergentes</li>
+				</ul>
+
+				<h1>Sistemas de Información</h1>
+				<ul>
+					<li>Bases de datos distribuidas</li>
+					<li>Inteligencia de Negocio</li>
+					<li>Recuperación de información</li>
+				</ul>
+
+				<h2>Complementos</h2>
+				<ul>
+				 	<li>Gestión de recursos digitales</li>
+				 	<li>Redes y sistemas complejos</li>
+				 	<li>Sistemas de información geográficos</li>
+				</ul>
+
+				<h1>Tecnologías de la información</h1>
+				<ul>
+					<li>Desarrollo de aplicaciones para internet</li>
+					<li>Infraestructuras Virtuales</li>
+					<li>Seguridad y Protección de Sistemas Informáticos</li>
+				</ul>
+
+				<h2>Complementos</h2>
+				<ul>
+				 	<li>Compresión y recuperación de Información Multimedia</li>
+				 	<li>Tratamiento de imágenes digitales.</li>
+				 	<li>Seguridad en Sistemas Operativos</li>
+				</ul>
+
+				<h1>Formación complementaria</h1>
+				<ul>
+				 	<li>Fisica aplicada a los dispositivos informáticos</li>
+				 	<li>Métodos Numéricos para la Ingeniería</li>
+				 	<li>Resolución de Problemas Científicos</li>
+				</ul>
+
+
+
+			</article>
+
+
+		</aside>
+
+	<footer id="pie">
+		Todos los derechos reservados &copy 2013-2014	
+	</footer>
+	
+		
+
+
+	
+
+	</body>
+
+
+</html>
