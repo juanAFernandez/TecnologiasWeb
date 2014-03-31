@@ -1,0 +1,30 @@
+#cuerpo{
+	/*Ajustando el color de fondo de todo el cuerpo (body)*/
+	background-color: #CCC;
+	font-family: Georgia, Cambria, Times, "Times New Roman";
+}
+
+#cabecera{
+	/*Color de fondo de la cabecera*/
+	background-color: #DDF;
+	/*Una linea que recuadre el area de la cabecera (header)*/
+	border: 2px solid #999999;
+	/*Separacion de las cuatro paredes de la caja que contiene a la cabecera (como un margen general)*/
+	padding: 10px;
+	/*Establecemos una anchura para la cabecera*/
+	width: 960px;
+	/*Para centrar el texto dentro de la caja de la cabecera*/
+	text-align: center;
+	/*Para centrar la caja en la página*/
+	margin: auto;
+}
+
+#texto, #precios, #formulario, #pie{
+	/*Una pequeña separación entre las secciones de la página.*/
+	margin-top:50px;
+}
+
+#pie{
+	/*Centrado del texto del pie*/
+	text-align: center;
+}

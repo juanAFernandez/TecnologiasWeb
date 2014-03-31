@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<title>V Congreso RITSI</title>
+      <link rel="stylesheet" href="estilo.css">
+		<meta charset="UTF-8">
+		<meta name="autor" content="Juan Antonio Fenández Sánchez">
+		<meta name="descripcion" content="Ejercicio del final de la práctica 1">
+	</head>
+
+
+	<body id="cuerpo">
+
+		<header id="cabecera">
+			<h1>V Congreso RITSI     Viernes 18 Marzo </h1>
+		</header>
+
+
+      <section id="texto">
+         <article>
+            RITSI, Reunión de Estudiantes de Ingenierías Técnicas y Superiores en Informática, es una asociación a nivel estatal que tiene por objetivo la representación de todo el estudiantado de Ingenierías en Informática.
+
+            Fue creada en el año 1992 para coordinar y representar a las Delegaciones de Estudiantes de Ingeniería Informática a nivel estatal.
+
+            Forman parte de RITSI las Delegaciones y Consejos de Estudiantes de las facultades y escuelas universitarias en las que se imparten estudios oficiales de Ingeniería Informática en sus distintas ramas:
+
+  
+            Representar, en el ámbito estatal y a todos los niveles, a los estudiantes de Ingenierías en Informática.
+            Coordinar a las delegaciones que forman parte de RITSI.
+            Defender sus derechos e intereses.
+            Defender las titulaciones de Ingeniería Informática.
+            Ser elemento de interlocución entre los estudiantes y otras organizaciones del sector, como la Conferencia de Directores y Decanos de Ingeniería Informática, el Consejo General de Colegios Profesionales de Ingeniería en Informática o el Consejo General de Colegios Oficiales de Ingeniería Técnica en Informática.
+            Luchar por la equiparación de las profesiones de Ingeniero en Informática e Ingeniero Técnico en Informática con el resto de ingenierías.
+            Dar formación a sus representantes.
+            Organizar, a iniciativa propia y de sus socios, actividades divulgativas sobre Informática dirigidas a los estudiantes.
+            Promoción del Software Libre.
+         </article>
+      </section>
+
+
+		<section id="precios">
+			<h1>Precios del congreso<h1>
+         <table style="width: 50%px;" border="3" align="center">
+               <tbody>
+                  <tr>
+                     <td></td>
+                     <td>1 día</td>
+                     <td>2 días</td>
+                     <td>3 días</td>
+                  </tr>
+                  <tr>
+                     <td>Estudiante de la ETSIIT</td>
+                     <td>0€</td>
+                     <td>5€</td>
+                     <td>10€</td>
+                  </tr>
+                  <tr>
+                     <td>Estudiante de la UGR</td>
+                     <td>5€</td>
+                     <td>10€</td>
+                     <td>15€</td>
+                  </tr>
+                  <tr>
+                     <td>No Universitario < 25 años</td>
+                     <td>10€</td>
+                     <td>15€</td>
+                     <td>20€</td>
+                  </tr>
+                  <tr>
+                     <td>No Universitario > 25 años</td>
+                     <td>12€</td>
+                     <td>17€</td>
+                     <td>22€</td>
+                  </tr>
+               </tbody>
+         </table>
+		</section>
+
+
+		<section id="formulario">
+         <h1>Formulario de Inscripción</h1>
+ 
+         <!-- Inicio del formulario -->
+         <form action="procesar.php" method="post">
+
+         <fieldset> <!-- Para crear una caja que encierre un aparte del formulario -->
+
+            <legend>Datos personales</legend> <!-- Título de la caja -->
+
+            <label for="CampoDeTexto1">Nombre:</label>
+            <input type="text" id="CampoDeTexto1" name="campoDeTexto1" value = ""/>
+            <br>
+            <label for="CampoDeTexto2">Apellidos:</label>
+            <input type="text" id="CampoDeTexto2" name="campoDeTexto2" value = ""/>
+            <br>
+            <label for="CampoDeTexto2">Correo Electrónico:</label>
+            <input type="email" id="CampoDeTexto3" name="campoDeTexto3" value = ""/>
+            <br>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="CampoDeTexto4" />
+
+         </fieldset><!-- Fin de la caja -->
+
+         <fieldset><!-- Otra caja -->
+            <legend>Otros</legend>
+
+            <label>Número de acompañantes</label>
+            <input type="text" id="CampoDeTexto5" name="campoDeTexto5" value = ""/>
+            <br>
+            <label>¿Es tu primera asistencia a RITSI?</label>
+            <input type = "radio" id = "radiobutton1" name="menu" value = "si"  checked/><label>Si</label>
+            <input type = "radio" id = "radiobutton2" name="menu" value = "no" /><label>No</label>
+            <br>
+            <!--Creamos una lista para usarla espués en el input -->
+            <datalist id="listaOpciones">
+               <option value="Delegación de Estudiantes">
+               <option value="Internet">
+               <option value="Un amigo">
+            </datalist>
+            <label for="campoDeTexto5">Cómo conociste el evento?</label>
+            <input type="text" id="campoDeTexto6" list="listaOpciones">
+         </fieldset>
+
+         <!-- botones -->
+         <button type="submit">Enviar</button>
+         <button type="submit">Reiniciar</button>
+
+         </form>
+         <!-- Fin del formulario -->
+
+		</section>
+
+
+		<aside>
+		</aside>
+
+
+
+
+
+		<footer id="pie">
+			Organizado por:
+         <br>
+         Universidad de Granada - Delegación de Estudiantes - Escuelta Técnica Superior de Ingeniería
+
+		</footer>
+
+
+
+	</body>
+
+
+</html>
