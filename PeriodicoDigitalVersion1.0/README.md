@@ -14,3 +14,7 @@ Primera práctica "grande" de la asignatura.
 Alojado en github en:
 
 https://github.com/juanAFernandez/TecnologiasWeb/tree/master/PeriodicoDigitalVersion1.0
+
+
+Para la papeleta de colores esta vez ha sido usada la herramienta de:
+http://colorschemedesigner.com/
