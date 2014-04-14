@@ -3,7 +3,7 @@
 	padding: 0px;
 }
 .menu{
-	background-color: rgb(40,50,90);
+	background: #65897D;
 }
 
 .menu li{
@@ -21,13 +21,14 @@
 }
 
 .cabecera{
-	background-color: rgb(255,255,255);
+	background: #818E8A;
+	border-bottom: 2px solid black;
 
 }
 
 .cuerpo{
 	float: left;
-	background-color: rgb(100,100,0);
+	background: #B0BBA9;
 	width: 80%; /*También valdría 500px como en la publi en vez de 25% 250px*/
 }
 
