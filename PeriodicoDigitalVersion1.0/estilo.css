@@ -9,14 +9,20 @@
 .menu li{
 	display: inline-block;
 	list-style: none;
-	
 	font: bold 14px verdana, sans-serif;
+}
+
+.menuPie li{
+	display: inline-block;
+	list-style: none;
+	font: 10px verdana, sans-serif;
+	/* border-bottom: 1px solid gray; //Para poner una pequeña linea debajo. */
 
 }
 
-
 .cabecera{
 	background-color: rgb(255,255,255);
+
 }
 
 .cuerpo{
@@ -45,21 +51,15 @@
 
 
 
-
-
-
-
-
-
 .publicidadArriba{
-	background-color: rgb(100,200,0);
-	padding-bottom: 50px;
+	margin-top: 0px;
+	background: #F3F7F6;
 }
 .publicidadIzquierda{
 	float:left;
 	width:10%;
 	padding-bottom: 1000px;
-	background: #CCCCCC;
+	background: #F3F7F6;
 
 }
 
@@ -67,7 +67,7 @@
 	float: right;
 	width:10%;
 	padding-bottom: 1000px;
-	background: #AAAAAA;
+	background: #F3F7F6;
 
 }
 
@@ -88,5 +88,7 @@ border-top: 2px solid #999999;
 
 
 body{
-	background: #FFF555;
+	/*Establecemos el color de fondo que se verá detrás de toda la página y que será usado como fondo
+	en los banners para intentar que queden mejor en conjunto*/
+	background: #F3F7F6;
 }
