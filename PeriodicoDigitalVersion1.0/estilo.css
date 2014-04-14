@@ -1,0 +1,84 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.menu{
+	background-color: rgb(40,50,90);
+}
+
+.menu li{
+	display: inline-block;
+	list-style: none;
+	
+	font: bold 14px verdana, sans-serif;
+
+}
+
+
+.cabecera{
+	background-color: rgb(255,255,255);
+}
+
+.cuerpo{
+	float: left;
+	background-color: rgb(100,100,0);
+	width: 80%; /*También valdría 500px como en la publi en vez de 25% 250px*/
+}
+
+.noticiasIzquierda{
+	float: left;
+	width:33.333%;
+	background-color: rgb(240,140,240);
+}
+
+.noticiasCentro{
+	float: left;
+	width:33.333%;
+	background-color: rgb(140,140,240);
+}
+
+.noticiasDerecha{
+	float: left;
+	width:33.333%;
+	background-color: rgb(240,40,240);
+}
+
+
+
+
+
+
+
+
+
+.publicidadArriba{
+	background-color: rgb(100,200,0);
+	padding-bottom: 50px;
+}
+.publicidadIzquierda{
+	float:left;
+	width:10%;
+	padding-bottom: 1000px;
+	background: #CCCCCC;
+
+}
+
+.publicidadDerecha{
+	float: right;
+	width:10%;
+	padding-bottom: 1000px;
+	background: #AAAAAA;
+
+}
+
+
+.todo {
+	margin: 15px auto;
+	width: 1000px;
+	background: #CCC333;
+}
+
+
+body{
+	background: #FFF555;
+}
