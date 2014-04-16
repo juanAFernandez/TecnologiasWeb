@@ -61,6 +61,7 @@
 }
 .noticiasIzquierda article{
 	margin-top: 10px;
+	padding-bottom: 10px;
 	border-bottom: 2px solid #999999;
 }
 .noticiasIzquierda header{
@@ -93,6 +94,12 @@
 	margin-top: 15px;
 }
 
+.fecha{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: gray;
+}
+
 .noticiasCentro img{
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -116,11 +123,44 @@
 	margin-top: 10px;
 }
 
+
+
+/*Formato de las páginas de sección*/
+
+.tituloSeccion{
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	background: #edf1f4;
+}
+
+.tituloSeccion h1{
+	font: 30px verdana bold, sans-serif;
+}
+.tituloSeccion h2{
+	font: 10px verdana, sans-serif;
+}
+
 .noticiaPrincipalSeccion{
 	/*Centramos la noticia principal y le añadimos un borde de 1 pixel para que resalte*/
-	margin: 15px;
+	padding: 13px;
 	border: 1px solid black;
 }
+.noticiaPrincipalSeccion h1{
+	font: bold 15px arial, sans-serif;
+}
+.noticiaPrincipalSeccion img{
+	padding: 8px;
+	width: 550px;
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
 
 
 .publicidadArriba{
