@@ -3,53 +3,124 @@
 	padding: 0px;
 }
 .menu{
-	background: #65897D;
+	padding: 3px;
+	background: #F3F7F6;
 }
 
 .menu li{
+	/*Para que los bloques se coloquen en linea*/
 	display: inline-block;
+	/*Pára quitar el típico estilo de una lista de elementos*/
 	list-style: none;
-	font: bold 14px verdana, sans-serif;
+	margin-left: 5px;
+	/*Tipo y estilo de letra*/
+	font: bold 12px arial;
 }
 
-.menuPie li{
-	display: inline-block;
-	list-style: none;
-	font: 10px verdana, sans-serif;
-	/* border-bottom: 1px solid gray; //Para poner una pequeña linea debajo. */
-
+.menu a{
+	color: black;
+	text-decoration:none;
 }
+
+.menu a:hover{
+	color: gray;
+}
+
+
 
 .cabecera{
-	background: #818E8A;
+	background: #F3F7F6;
+	padding: 8px;
 	border-bottom: 2px solid black;
+	
+}
+.cabecera h1{
+	font: bold 25px arial 	;
+	color: rgb(0,0,0);
+}
+.cabecera h2{
+	font: bold 13px verdana, sans-serif;
+	color: rgb(150,150,150);
+	margin-left: 30px;
 
 }
 
 .cuerpo{
 	float: left;
-	background: #B0BBA9;
+	background: #F3F7F6;
 	width: 80%; /*También valdría 500px como en la publi en vez de 25% 250px*/
+	font: 10px verdana, sans-serif;
 }
 
 .noticiasIzquierda{
+	background: #F3F7F6;
+	padding: 5px;
 	float: left;
-	width:33.333%;
-	background-color: rgb(240,140,240);
+	width:35%;
+	
 }
+.noticiasIzquierda article{
+	margin-top: 10px;
+	border-bottom: 2px solid #999999;
+}
+.noticiasIzquierda header{
+	font: bold 15px verdana, sans-serif;
+
+}
+.noticiasIzquierda img{
+	padding: 8px;
+	width: 250px;
+	height: 180px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
 
 .noticiasCentro{
+	background: #F3F7F6;
+	padding: 5px;
 	float: left;
-	width:33.333%;
-	background-color: rgb(140,140,240);
+	width:31%;
 }
+.noticiasCentro header{
+	font: bold 15px arial, sans-serif;
+
+}
+.noticiasCentro article{
+	border-bottom: 1px solid #999999;
+	margin-top: 15px;
+}
+
+.noticiasCentro img{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 250px;
+	height: 320px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
 
 .noticiasDerecha{
+	background: #F3F7F6;
+	padding: 5px;
 	float: left;
-	width:33.333%;
-	background-color: rgb(240,40,240);
+	width:30%;
+}
+.noticiasDerecha article{
+	margin-top: 10px;
 }
 
+.noticiaPrincipalSeccion{
+	/*Centramos la noticia principal y le añadimos un borde de 1 pixel para que resalte*/
+	margin: 15px;
+	border: 1px solid black;
+}
 
 
 .publicidadArriba{
@@ -72,11 +143,10 @@
 
 }
 
-
 .todo {
 	margin: 15px auto;
 	width: 1000px;
-	background: #CCC333;
+	background: #F3F7F6;
 }
 
 
@@ -85,8 +155,15 @@ clear: both;
 text-align: center;
 padding: 20px;
 border-top: 2px solid #999999;
+border-bottom: 2px solid #999999;
 }
+.menuPie li{
+	display: inline-block;
+	list-style: none;
+	font: 10px verdana, sans-serif;
+	/* border-bottom: 1px solid gray; //Para poner una pequeña linea debajo. */
 
+}
 
 body{
 	/*Establecemos el color de fondo que se verá detrás de toda la página y que será usado como fondo
