@@ -1,3 +1,13 @@
+/*
+NOTAS GENERALES:
+
+Se ha intentado realizar una configuración específica para la mayoría de las secciones
+de nuestro modelo de periódico. Así al realizar la segunda parte podremos ajustar bien
+el comportarmiento de PHP para que todos los datos que obtengamos de la base de datos 
+adopte el formato y estilo predefinido aquí.
+*/
+
+
 /*Configuración general*/
 *{
 	margin: 0px;
@@ -265,8 +275,13 @@ el index.html
 .noticiaPrincipalSeccion header{
 	padding-bottom: 10px;
 }
-.noticiaPrincipalSeccion h1{
+/*Aunque a esta sección le apliquemos estilo h1 ya posee otro estilo que es el que le pone
+la barra de color, pero no obstante podemos aplicar estilo desde ambos sitios (nos conviene así)
+sin crear conflicto entre ellos, ya que hacen cosas distintas. */
+.noticiaPrincipalSeccion a{
 	font: bold 15px verdana, sans-serif;
+	text-decoration:none;
+	color: black;
 }
 
 .noticiaPrincipalSeccion img{
@@ -285,7 +300,8 @@ el index.html
 	padding-right: 30px;
 }
 .noticiaIndividual h1{
-	font: bold 15px verdana, sans-serif, gray;
+	font: bold 20px verdana, sans-serif, gray;
+	margin-bottom: 15px;
 }
 .noticiaIndividual img{
 	padding-top: 20px;
@@ -293,6 +309,12 @@ el index.html
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+.noticiaIndividual article #pieImagen{
+	font: 8px verdana, sans-serif;
+	margin-left: 0px;
+	color: gray;
+	padding-bottom: 20px;
 }
 
 
