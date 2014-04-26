@@ -243,9 +243,12 @@ el index.html
 	font: bold 12px verdana, sans-serif;
 	color: black;
 	text-decoration:none;
-
 }
-
+.ultimasNoticias{
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 400px;
+}
 
 
 /*Formato de las páginas de sección*/
@@ -308,7 +311,7 @@ sin crear conflicto entre ellos, ya que hacen cosas distintas. */
 	padding-bottom: 20px;
 	display: block;
 	margin-left: auto;
-	margin-right: auto;
+	padding-right: auto;
 }
 .noticiaIndividual article #pieImagen{
 	font: 8px verdana, sans-serif;
@@ -317,6 +320,14 @@ sin crear conflicto entre ellos, ya que hacen cosas distintas. */
 	padding-bottom: 20px;
 }
 
+.opinionLectores #caja{
+	overflow: scroll;
+	overflow-x: hidden;
+	height:150px;
+	width: 550px;
+	padding-bottom: 50px;
+	margin-bottom: 10px;
+}
 
 .opinionLectores header{
 	padding-top: 30px;
@@ -337,6 +348,7 @@ sin crear conflicto entre ellos, ya que hacen cosas distintas. */
 
 .opinionLectores a{
 	text-decoration:none;
+
 }
 
 
@@ -344,6 +356,10 @@ sin crear conflicto entre ellos, ya que hacen cosas distintas. */
 	padding: 50px;
 	background: rgb(230,230,230);
 	margin-bottom: 30px;
+}
+
+.formularioOpinion{
+	padding-top: 20px;
 }
 
 .publicidadArriba{
