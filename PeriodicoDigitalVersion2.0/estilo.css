@@ -1,0 +1,411 @@
+/*
+NOTAS GENERALES:
+
+Se ha intentado realizar una configuración específica para la mayoría de las secciones
+de nuestro modelo de periódico. Así al realizar la segunda parte podremos ajustar bien
+el comportarmiento de PHP para que todos los datos que obtengamos de la base de datos 
+adopte el formato y estilo predefinido aquí.
+*/
+
+
+/*Configuración general*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Configuración general del menú de navegación */
+.menu{
+	padding: 3px;
+	background: #F3F7F6;
+}
+/*Configuración específica dentro del menú para los elementos de la lista que lo conforman*/
+.menu li{
+	/*Para que los bloques se coloquen en linea*/
+	display: inline-block;
+	/*Pára quitar el típico estilo de una lista de elementos*/
+	list-style: none;
+	margin-left: 5px;
+	/*Tipo y estilo de letra*/
+	font: bold 12px arial;
+}
+/*Configuración de cada enlace del menú*/
+.menu a{
+	color: black;
+	/*Para quitar el aspecto típico de enlace*/
+	text-decoration:none;
+}
+/*Al pasar por encima con el ratón cambia de color a gris*/
+.menu a:hover{
+	color: gray;
+}
+
+
+
+
+/*Identificadores de sección (barra vertical de color a la izquierda del nombre)
+  Esta config afecta tanto a los elementos del menú como a todos los artículos de 
+  la portada.
+*/
+.identificacionSeccionPortada{
+	border-left: 4px solid black;
+	padding-left: 2px;
+}
+.identificacionSeccionGeneral{
+	/*Barra vertical a la izquierda y color*/
+	border-left: 4px solid green;
+	padding-left: 2px;
+}
+.identificacionSeccionDocencia{
+	border-left: 4px solid red;
+	padding-left: 2px;
+}
+.identificacionSeccionDelegacion{
+	border-left: 4px solid orange;
+	padding-left: 2px;
+}
+.identificacionSeccionActividades{
+	border-left: 4px solid blue;
+	padding-left: 2px;
+}
+.identificacionSeccionOpinion{
+	border-left: 4px solid purple;
+	padding-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+.cabecera{
+	background: #F3F7F6;
+	padding: 8px;
+	border-bottom: 2px solid black;
+	
+}
+.cabecera h1{
+	font: bold 25px arial 	;
+	color: rgb(0,0,0);
+}
+.cabecera h2{
+	font: bold 13px verdana, sans-serif;
+	color: rgb(150,150,150);
+	margin-left: 30px;
+
+}
+
+
+/*La estructura de la página la conforman tres columnas,
+una gran columna central a la que llamamos cuerpo que irá subdivida
+en muchas partes y dos columnas laterales llamadas publicidadIzquierda
+y publicidadDerecha.
+Esta es la configuración (muy a grandes rasgos) de la columna central -cuerpo- */
+.cuerpo{
+	float: left;
+	background: #F3F7F6;
+	width: 80%; /*También valdría 500px como en la publi en vez de 25% 250px*/
+	font: 10px verdana, sans-serif;
+}
+
+
+
+
+
+
+/*Estilo de toda la columna izquierda de noticias*/
+.noticiasIzquierda{
+	background: #F3F7F6;
+	padding: 5px;
+	float: left;
+	width:35%;	
+}
+/*Estilo de cada artículo en su conjunto, incluyendo header, footer, img si tiene y fecha*/
+.noticiasIzquierda article{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #999999;
+}
+
+.noticiasIzquierda header{
+	padding-bottom: 5px;
+}
+
+
+/*Estilo del titular, enlace también a la noticia*/
+.noticiasIzquierda header a{
+	font: bold 12px verdana, sans-serif;
+	color: black;
+	text-decoration:none;
+
+}
+/*Configuración de las imágenes en las noticias de la columna de la izquierda */
+.noticiasIzquierda img{
+	padding: 8px;
+	width: 250px;
+	height: 180px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+Hay algunas configuraciones que pueden ser generales independientemente del lugar
+donde se encuentre el elemento, como el estilo de la fecha o del autor de los artículos
+pero otras cambiar dependiendo de si están en las noticias de la columna izquierda o en las
+del centro, como el pié de la imagen que en la columna izquierda se encuentra centrada
+con su imagen pero que en la columna central debe estar justificada al margen izquierdo
+como la foto, que está ajustada al tamaño de la columna.
+Esto lo hacemos mezclando identificiones class e id y obtenemos un control muy preciso
+sobre todos los elementos estructurales de la página, aunque esto se hace en HTML en 
+el index.html
+ */
+
+.noticiasIzquierda article #pieImagen{
+	font: 8px verdana, sans-serif;
+	margin-left: 15px;
+	color: gray;
+}
+
+
+
+
+
+
+.noticiasCentro{
+	background: #F3F7F6;
+	padding: 5px;
+	float: left;
+	width:31%;
+}
+.noticiasCentro header{
+	padding-bottom: 5px;
+}
+.noticiasCentro header a{
+	font: bold 12px verdana, sans-serif;
+	color: black;
+	text-decoration:none;
+
+}
+.noticiasCentro article{
+	border-bottom: 1px solid #999999;
+	margin-top: 15px;
+}
+
+.fecha{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: gray;
+}
+
+.noticiasCentro img{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 250px;
+	height: 320px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.noticiasCentro article #pieImagen{
+	font: 8px verdana, sans-serif;
+	margin-left: 0px;
+	color: gray;
+}
+
+
+
+.autor{
+	margin-top: 3px;
+	color: gray;
+}
+
+.noticiasDerecha{
+	background: #F3F7F6;
+	padding: 5px;
+	float: left;
+	width:30%;
+}
+.noticiasDerecha article{
+	margin-top: 10px;
+}
+
+.noticiasDerecha header{
+	padding-bottom: 5px;
+}
+.noticiasDerecha header a{
+	font: bold 12px verdana, sans-serif;
+	color: black;
+	text-decoration:none;
+}
+.ultimasNoticias{
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 400px;
+}
+
+
+/*Formato de las páginas de sección*/
+
+.tituloSeccion{
+	margin-top: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	background: #edf1f4;
+}
+
+
+.tituloSeccion h1{
+	font: 30px verdana bold, sans-serif;
+}
+.tituloSeccion h2{
+	font: 10px verdana, sans-serif;
+}
+
+.noticiaPrincipalSeccion{
+	/*Centramos la noticia principal y le añadimos un borde de 1 pixel para que resalte*/
+	padding: 13px;
+	border: 1px solid black;
+}
+.noticiaPrincipalSeccion header{
+	padding-bottom: 10px;
+}
+/*Aunque a esta sección le apliquemos estilo h1 ya posee otro estilo que es el que le pone
+la barra de color, pero no obstante podemos aplicar estilo desde ambos sitios (nos conviene así)
+sin crear conflicto entre ellos, ya que hacen cosas distintas. */
+.noticiaPrincipalSeccion a{
+	font: bold 15px verdana, sans-serif;
+	text-decoration:none;
+	color: black;
+}
+
+.noticiaPrincipalSeccion img{
+	padding: 8px;
+	width: 550px;
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.noticiaIndividual{
+	float: left;
+	width:65%;
+	padding-right: 30px;
+}
+.noticiaIndividual h1{
+	font: bold 20px verdana, sans-serif, gray;
+	margin-bottom: 15px;
+}
+.noticiaIndividual img{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: block;
+	margin-left: auto;
+	padding-right: auto;
+}
+.noticiaIndividual article #pieImagen{
+	font: 8px verdana, sans-serif;
+	margin-left: 0px;
+	color: gray;
+	padding-bottom: 20px;
+}
+
+.opinionLectores #caja{
+	overflow: scroll;
+	overflow-x: hidden;
+	height:150px;
+	width: 550px;
+	padding-bottom: 50px;
+	margin-bottom: 10px;
+}
+
+.opinionLectores header{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	font: bold 13px verdana, sans-serif;
+}
+
+.opinionLectores h1{
+	font: 12px verdana, sans-serif, gray;
+	padding-bottom: 2px;
+}
+
+.opinionLectores article{
+	padding-left: 5px;
+	margin-bottom: 10px;
+	border-left: 1px solid gray; 
+}
+
+.opinionLectores a{
+	text-decoration:none;
+
+}
+
+
+.formularioSuscripcion{
+	padding: 50px;
+	background: rgb(230,230,230);
+	margin-bottom: 30px;
+}
+
+.formularioOpinion{
+	padding-top: 20px;
+}
+
+.publicidadArriba{
+	margin-top: 0px;
+	background: #F3F7F6;
+}
+.publicidadIzquierda{
+	float:left;
+	width:10%;
+	padding-bottom: 1000px;
+	background: #F3F7F6;
+
+}
+
+.publicidadDerecha{
+	float: right;
+	width:10%;
+	padding-bottom: 1000px;
+	background: #F3F7F6;
+
+}
+
+.todo {
+	margin: 15px auto;
+	width: 1000px;
+	background: #F3F7F6;
+}
+
+
+#pie {
+clear: both;
+text-align: center;
+padding: 20px;
+border-top: 2px solid #999999;
+border-bottom: 2px solid #999999;
+}
+.menuPie li{
+	display: inline-block;
+	list-style: none;
+	font: 10px verdana, sans-serif;
+	/* border-bottom: 1px solid gray; //Para poner una pequeña linea debajo. */
+
+}
+
+body{
+	/*Establecemos el color de fondo que se verá detrás de toda la página y que será usado como fondo
+	en los banners para intentar que queden mejor en conjunto*/
+	background: #F3F7F6;
+}
