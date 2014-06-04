@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<!-- -->
+	<script type="text/javascript" src="validacion.js"></script>
+	<title>El primer script</title>
+
+		<!--El código de Java Script se recomienda incluirlo en la cabecera del documento.
+			El código Java Script tiene que estar encerrado entre las etiquetas script y 
+			debe de incluir en la directiva type = text/javascript
+		 -->
+
+
+	</head>
+ 
+	<body>
+
+		</script>
+			<form name="miFormulario" id="miFormulario" action="" method="get" onsubmit="return validacion(this)">
+
+				<fieldset>
+				<legend>Datos personales</legend> <!-- Título de la caja -->
+
+				<table>
+					<tr>
+						<td>Nombre</td>
+						<td><input type="text" name="nombre" id="nombre" value=""></td>
+						<td><div id="ejemplo">*</div></td>
+					</tr>
+					<tr>
+						<td>Primer apellido</td>
+						<td><input type="text" name="primerApellido" id="primerApellido" value=""></td>
+					</tr>
+					<tr>
+						<td>Segundo apellido</td>
+						<td><input type="text" name="segundoApellido" id="segundoApellido" value=""></td>
+					</tr>
+					<tr>
+						<td>Correo</td>
+						<td><input type="text" name="correo" id="correo" value=""></td>
+					</tr>
+					<tr>
+						<td>Teléfono de contacto</td>
+						<td><input type="text" name="telefono" id="telefono" value=""></td>
+					</tr>
+					<tr>
+						<td>Sexo</td>
+						<td>
+                <input type="radio" name="sex" value="hombre" id="sexoHombre">  Hombre
+						    <input type="radio" name="sex" value="mujer"  id="sexoMujer" >  Mujer
+            </td>
+					</tr>
+
+				</table>
+				</fieldset>
+
+				<br>
+					<h1>Comentarios</h1>
+          <input type="text" name="comentarios" id="comentarios" value="" maxlength="250 " size="150" style='height:20em' ></td>
+				<br>
+				<br>
+				<input type="submit" value="Enviar">
+			</form> 
+
+	</body>
+
+</html>

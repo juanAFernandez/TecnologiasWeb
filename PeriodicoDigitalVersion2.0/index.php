@@ -25,16 +25,22 @@
 			<img src="imagenes/bannerSuperior.gif" width="800px" height="70px">
 		</section>
 
+		<!--Cabecera de la página [TITULO] -->
 		<header class="cabecera">
-
-			<?php
-
-			 include 'cabecera.php';
-
-			 ?>
-
-
+			<section id="titulo">
+				<?php
+			 		//Llamada a funcion cabecera.php para que introduzca la cabecera definida en otro lugar.
+			 		include 'cabecera.php';
+			 	?>
+			</section>
+			<section id="controlUsuario">
+				<?php
+					//Llamamos a la funcion para el control del usuario
+				?>
+			</section>
 		</header>
+
+
 
 		<?php include 'menu.php'; ?>
 
